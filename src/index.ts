@@ -42,4 +42,5 @@ app.use("/api/v1", apiRouter);
 
 app.listen(config.port, () => {
   console.log(`Server is running on http://localhost:${config.port}`);
+  console.log(`CORS Origins enabled:`, config.corsOrigin);
 });
